@@ -1,42 +1,92 @@
-# Social Media Backend API
+📱 Social Media Platform – Full Stack Web Application
 
-## 📌 Project Description
-This is a backend REST API for a social media application built using Node.js, Express, and MongoDB.
+A full-stack Social Media Platform built using the MERN stack, allowing users to connect, share posts, upload images, and interact with other users in real time.
+This project was developed as part of my internship task at CodeAlpha.
 
-## 🚀 Features
-- User Registration & Login (JWT)
-- Create Posts
-- Like & Comment
-- Follow & Unfollow Users
-- Secure Routes with Authentication
+🚀 Features
+🔐 User Authentication (Register & Login)
+👤 User Profiles
+📝 Create, View & Delete Posts
+🖼 Image Upload Support
+❤️ Like & Interact with Posts
+👥 View Other Users
+🔒 Protected Routes (JWT-based authentication)
+📱 Responsive UI
 
-## 🛠 Tech Stack
-- Node.js
-- Express.js
-- MongoDB
-- JWT
-- Mongoose
+🛠 Tech Stack
 
-## ⚙ Installation
+1.Frontend
+HTML
+CSS
+JavaScript
 
-1. Clone the repo
-2. Install packages:
-   npm install
-3. Create .env file:
-   PORT=5000  
-   MONGO_URI=your_mongodb_url  
-   JWT_SECRET=your_secret
-4. Run server:
-   npx nodemon index.js
+2.Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT Authentication
+Multer (for image uploads)
 
-## 📬 API Endpoints
+📂 Project Structure
+codeAlpha_SocialMedia/
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── uploads/
+│   ├── index.js
+│   └── package.json
+│
+├── frontend/
+│   ├── css
+│   ├── js
+│   ├── images/
+│   ├── index.html
+│   ├── home.html
+│   ├── profile.html
+│   └── users.html
+│
+└── README.md
 
-| Method | Route | Description |
-|--------|--------|-------------|
-| POST | /api/auth/register | Register |
-| POST | /api/auth/login | Login |
-| POST | /api/posts | Create Post |
-| GET | /api/users/me | Profile |
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/akankshagotarne/codeAlpha_SocialMedia.git
 
-## 👩‍💻 Author
+2️⃣ Backend setup
+cd backend
+npm install
+node index.js
+
+3️⃣ Frontend
+
+Open frontend/index.html in your browser
+(or use Live Server)
+
+🌐 Environment Variables
+
+Create a .env file inside backend/ and add:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+
+
+🎯 Learning Outcomes
+
+Hands-on experience with MERN stack
+REST API development
+Authentication & authorization
+File uploads handling
+Frontend–Backend integration
+Git & GitHub workflow
+
+🧑‍💻 Author
 Akanksha Gotarne
+3rd Year IT Engineering Student
+
+
+⭐ Acknowledgements
+Thanks to CodeAlpha for providing this internship opportunity and guidance.
