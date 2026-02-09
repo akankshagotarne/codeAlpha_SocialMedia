@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-left">
+    <img src="images/logo for social platform.png" alt="BuzzUp Logo">
+  </div>
+
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="users.html">Users</a>
+    <a href="#" onclick="logout()">Logout</a>
+    <button class="btn" onclick="toggleDark()">🌙</button>
+  </div>
+</div>
+
+
+<!-- MAIN -->
+<div class="container profile-container">
+
+  <!-- LEFT CARD -->
+  <div class="profile-card">
+   
+
+    <img
+  id="profilePic"
+  src="images/default.png"
+  class="profile-img"
+  onerror="this.src='images/default.png'"
+>
+
+  
+
+    <h2 id="profileName">Loading...</h2>
+
+    <p id="profileEmail"></p>
+
+    <div class="follow-box">
+
+      <div>
+        <b id="followersCount">0</b>
+        <span>Followers</span>
+      </div>
+
+      <div>
+        <b id="followingCount">0</b>
+        <span>Following</span>
+      </div>
+
+    </div>
+
+
+    <!-- Upload -->
+    <input type="file" id="photoInput">
+  
+  
+    <button class="btn" onclick="uploadPhoto()">
+      Upload Photo
+    </button>
+
+  </div>
+
+<!-- CREATE POST -->
+<div class="post-create">
+
+  <div class="create-header">
+
+    <img
+      id="myAvatar"
+      class="avatar"
+      src="http://localhost:5000/uploads/default.png"
+    >
+
+    <textarea
+      id="postText"
+      placeholder="What's buzzing....... &#128029;"></textarea>
+
+  </div>
+
+  <div class="create-actions">
+
+    <input type="file" id="postImage">
+
+    <button class="btn" onclick="createPost()">
+      Post
+    </button>
+
+  </div>
+
+</div>
+
+  <!-- RIGHT -->
+  <div class="posts-card">
+
+    <h3>My Posts</h3>
+
+    <div id="myPosts"></div>
+
+  </div>
+
+</div>
+
+ 
+<script src="profile.js"></script>
+
+
+
+
+</body>
+</html>

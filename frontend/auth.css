@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, white, white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Main Container */
+
+.container {
+  width: 900px;
+  height: 550px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+
+
+/* Left */
+
+.left {
+  width: 50%;
+  background: #4642b2;
+  color: white;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-style: italic;
+  
+  text-align: center;
+
+
+}
+
+.left img {
+  width: 400px;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+
+
+/* Right */
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Card */
+
+.card {
+  width: 80%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #4642b2;
+}
+
+
+
+/* Inputs */
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.card input:focus {
+  border-color: #4642b2;
+}
+
+
+
+/* Button */
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background: #4642b2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background: #4642b2;
+}
+
+
+
+/* Switch */
+
+.card p {
+  margin-top: 15px;
+}
+
+.card span {
+  color: #4642b2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+/* Hide */
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Mobile */
+
+@media(max-width: 768px){
+
+  .container {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+}

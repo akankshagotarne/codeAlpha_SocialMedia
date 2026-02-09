@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
+
   name: {
     type: String,
     required: true
@@ -17,19 +18,21 @@ const userSchema = new mongoose.Schema({
     required: true
   },
 
-  followers: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
-    }
-  ],
+  profilePic: {
+    type: String,
+    default: "default.png"
+  },
 
-  following: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
-    }
-  ]
-}, { timestamps: true });
+  followers: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User"
+  }],
+
+  following: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User"
+  }]
+
+});
 
 module.exports = mongoose.model("User", userSchema);

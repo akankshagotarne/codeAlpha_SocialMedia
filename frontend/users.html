@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+  <div class="nav-left">
+    <img src="images/logo for social platform.png" alt="BuzzUp Logo">
+  </div>
+
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="users.html">Users</a>
+    <a href="#" onclick="logout()">Logout</a>
+    <button class="btn" onclick="toggleDark()">🌙</button>
+  </div>
+</div>
+<div class="users-search">
+  <input
+    type="text"
+    id="searchUser"
+    placeholder="Search users..."
+    onkeyup="filterUsers()"
+  >
+</div>
+
+
+<h2 class="page-title">All Users</h2>
+
+<div id="users"></div>
+
+
+<script src="users.js"></script>
+</body>
+</html>

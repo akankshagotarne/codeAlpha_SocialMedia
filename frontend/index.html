@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SocialConnect | Login</title>
+
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Left -->
+    <div class="left">
+      
+      
+      <img src="images\logo for social platform.png">
+
+      <p>Connect with friends and the world around you &#128029;</p>
+    </div>
+
+    <!-- Right -->
+    <div class="right">
+
+      <!-- Login -->
+      <div class="card" id="loginBox">
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+
+        <button onclick="login()">Login</button>
+
+        <p>
+          Don't have an account?
+          <span onclick="showRegister()">Register</span>
+        </p>
+
+      </div>
+
+      <!-- Register -->
+      <div class="card hidden" id="registerBox">
+
+        <h2>Create Account</h2>
+
+        <input type="text" id="regName" placeholder="Full Name" />
+        <input type="email" id="regEmail" placeholder="Email" />
+        <input type="password" id="regPassword" placeholder="Password" />
+
+        <button onclick="register()">Register</button>
+
+        <p>
+          Already have account?
+          <span onclick="showLogin()">Login</span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+  <div class="navbar">
+  <div class="nav-left">
+    <img src="images/logo for social platform.png" alt="BuzzUp Logo">
+  </div>
+
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="users.html">Users</a>
+    <a href="#" onclick="logout()">Logout</a>
+    <button class="btn" onclick="toggleDark()">🌙</button>
+  </div>
+</div>
+
+<!-- STORIES -->
+
+
+<div class="container">
+
+  <div class="stories" id="stories">
+
+  <div class="story">
+    <img src="http://localhost:5000/uploads/default.png">
+
+    <span>You</span>
+  </div>
+
+  <div class="story">
+    <img src="http://localhost:5000/uploads/default.png">
+
+    <span>User</span>
+  </div>
+
+  <div class="story">
+    <img src="http://localhost:5000/uploads/default.png">
+
+    <span>Friend</span>
+  </div>
+
+</div>
+
+
+  
+
+
+  <!-- Posts -->
+  <div id="posts"></div>
+
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
